@@ -1,6 +1,7 @@
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import WhyUs from "./components/WhyUs";
 
 function Page() {
   return (
@@ -8,6 +9,7 @@ function Page() {
       <Navbar />
       <Hero />
       <Experience />
+      <WhyUs />
     </>
   );
 }

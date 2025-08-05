@@ -57,7 +57,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="relative -z-20 min-h-screen bg-white px-20">
+    <div className="relative -z-20 min-h-[80vh] bg-white px-20">
       <div className="bg-light absolute top-0 right-0 left-0 -z-10 h-20"></div>
       <motion.div
         ref={ref}
