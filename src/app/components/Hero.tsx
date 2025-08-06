@@ -23,18 +23,18 @@ export default function Hero() {
   };
 
   return (
-    <div className="bg-light min-h-screen px-20">
-      <Container className="flex h-full pt-20 pb-15">
+    <div className="bg-light min-h-screen px-5 md:px-20">
+      <Container className="flex h-full pt-10 pb-15 md:pt-20">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex"
+          className="flex flex-col items-center md:flex-row"
         >
-          <div className="flex w-full flex-col items-start justify-between gap-5 md:w-1/2">
+          <div className="flex w-full flex-col items-center justify-between gap-5 md:w-1/2 md:items-start">
             <motion.h1
               variants={itemVariants}
-              className="hero-animate text-6xl/tight"
+              className="hero-animate text-center text-4xl/tight md:text-start md:text-6xl/tight"
             >
               <span className="font-semibold">
                 Get paid early <br />
@@ -43,7 +43,7 @@ export default function Hero() {
             </motion.h1>
             <motion.p
               variants={itemVariants}
-              className="hero-animate w-[80%] text-neutral-500"
+              className="hero-animate text-center text-neutral-500 md:w-[80%] md:text-start"
             >
               Supports small businessess with simple invoicing, powerful
               integrations and cash flow management tools.
@@ -58,8 +58,8 @@ export default function Hero() {
                 placeholder="Your businessess email"
               />
               <button className="bg-primary flex items-center gap-2 rounded-lg px-6 py-2 text-sm text-white">
-                <span>Get Started</span>
-                <MoveUpRight className="h-4 w-4" />
+                <span className="min-w-fit">Get Started</span>
+                <MoveUpRight className="hidden md:inline md:h-4 md:w-4" />
               </button>
             </motion.div>
 
@@ -153,7 +153,7 @@ function PaymentCard() {
 
 function HeroCreditCard() {
   return (
-    <div className="bg-primary flex h-60 w-50 flex-col justify-between overflow-hidden rounded-lg text-white">
+    <div className="bg-primary flex h-50 w-40 flex-col justify-between overflow-hidden rounded-lg text-white md:h-60 md:w-50">
       <div className="p-6">
         <p className="text-xs text-neutral-300">Credit Card</p>
         <p>2341 **** ****</p>

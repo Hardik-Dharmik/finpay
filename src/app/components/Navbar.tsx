@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export default function Navbar() {
   return (
-    <nav className="bg-light px-15 text-sm">
+    <nav className="bg-light sticky top-0 right-0 left-0 z-100 px-15 text-sm">
       <Container className="py-4">
         <motion.div
           initial={{ opacity: 0, y: 5 }}
