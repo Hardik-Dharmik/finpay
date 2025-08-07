@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarSync } from "lucide-react";
+import { CalendarSync, Landmark, Shield, ShieldHalf } from "lucide-react";
 import { useAnimation, useInView, motion } from "motion/react";
 import { useEffect, useRef } from "react";
 
@@ -13,16 +13,16 @@ export default function Experience() {
         "Create a financial experience and automate repeat purchases by scheduling recurring payments.",
     },
     {
-      logo: <CalendarSync className="h-12 w-12 stroke-[1.5px]" />,
-      text: "Free transfers",
+      logo: <Landmark className="h-12 w-12 stroke-[1.5px]" />,
+      text: "Multiple account",
       description:
-        "Create a financial experience and automate repeat purchases by scheduling recurring payments.",
+        "Run your operations with cash from your account and generate yield on funds stored in your account.",
     },
     {
-      logo: <CalendarSync className="h-12 w-12 stroke-[1.5px]" />,
-      text: "Free transfers",
+      logo: <ShieldHalf className="h-12 w-12 stroke-[1.5px]" />,
+      text: "Unmatched security",
       description:
-        "Create a financial experience and automate repeat purchases by scheduling recurring payments.",
+        "Securely manage your finances with organization-wide MFA, card-locking and account-level controls.",
     },
   ];
 

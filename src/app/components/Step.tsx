@@ -7,19 +7,19 @@ import { useEffect, useRef } from "react";
 export default function Step() {
   const experiences = [
     {
-      text: "Free transfers",
+      text: "Open your account",
       description:
-        "Create a financial experience and automate repeat purchases by scheduling recurring payments.",
+        "Sign up to finpay and set up your account from the dashboard.",
     },
     {
-      text: "Free transfers",
+      text: "Transfer your money",
       description:
-        "Create a financial experience and automate repeat purchases by scheduling recurring payments.",
+        "Move money from to another account into and start to earning up.",
     },
     {
-      text: "Free transfers",
+      text: "Watch your balance grow",
       description:
-        "Create a financial experience and automate repeat purchases by scheduling recurring payments.",
+        "Accessed instantly and remain insulated from market volatility.",
     },
   ];
 

@@ -23,23 +23,22 @@ export default function Footer() {
               <div className="flex flex-col">
                 <p className="text-neutral-blue mb-3 md:mb-5">Solutions</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
+                <p className="my-2 text-sm text-neutral-500">Freelancers</p>
+                <p className="my-2 text-sm text-neutral-500">Customers</p>
+                <p className="my-2 text-sm text-neutral-500">Taxes</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-neutral-blue mb-3 md:mb-5">Solutions</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
+                <p className="text-neutral-blue mb-3 md:mb-5">Company</p>
+                <p className="my-2 text-sm text-neutral-500">About Us</p>
+                <p className="my-2 text-sm text-neutral-500">Career</p>
+                <p className="my-2 text-sm text-neutral-500">Contact</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-neutral-blue mb-3 md:mb-5">Solutions</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
-                <p className="my-2 text-sm text-neutral-500">Small Business</p>
+                <p className="text-neutral-blue mb-3 md:mb-5">Learn</p>
+                <p className="my-2 text-sm text-neutral-500">Blog</p>
+                <p className="my-2 text-sm text-neutral-500">Ebooks</p>
+                <p className="my-2 text-sm text-neutral-500">Guides</p>
+                <p className="my-2 text-sm text-neutral-500">Templates</p>
               </div>
             </div>
 

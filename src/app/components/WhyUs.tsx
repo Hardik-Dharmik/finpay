@@ -51,7 +51,7 @@ export default function WhyUs() {
               className="bg-light flex flex-col justify-between gap-y-5 rounded-lg p-6 md:w-1/2 md:gap-y-0 md:p-10"
             >
               <span className="text-xl font-semibold md:text-2xl">
-                Business already running on Finpay
+                Instant Withdraw your funds at any time
               </span>
               <div className="flex items-center self-center">
                 <span className="bg-primary h-10 w-10 rounded-lg p-2 md:h-14 md:w-14">
@@ -75,12 +75,10 @@ export default function WhyUs() {
             className="bg-light flex flex-1 items-center gap-6 rounded-lg p-6 md:p-10 md:pb-0"
           >
             <div className="md:-mt-8">
-              <p className="text-xl font-semibold">
-                Business already running on Finpay
-              </p>
+              <p className="text-xl font-semibold">No asset volatility</p>
               <p className="text-xs text-neutral-500">
                 Generate returns on your cash reserves without making any
-                investment
+                investments.
               </p>
             </div>
 

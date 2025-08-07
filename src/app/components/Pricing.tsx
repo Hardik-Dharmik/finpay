@@ -52,12 +52,12 @@ export default function Pricing() {
             <span className="text-primary">Revenue business</span>
           </div>
           <div className="flex flex-col items-center justify-center gap-3">
-            <span className="text-5xl font-semibold">24%</span>
-            <span className="text-primary">Revenue business</span>
+            <span className="text-5xl font-semibold">180k</span>
+            <span className="text-primary">In annual revenue</span>
           </div>
           <div className="flex flex-col items-center justify-center gap-3">
-            <span className="text-5xl font-semibold">24%</span>
-            <span className="text-primary">Revenue business</span>
+            <span className="text-5xl font-semibold">10+</span>
+            <span className="text-primary">Months of runway</span>
           </div>
         </motion.div>
 
@@ -92,9 +92,9 @@ export default function Pricing() {
               transition={{ duration: 0.6, ease: "easeOut", delay: 1 }}
               className="bg-primary flex flex-col justify-between gap-y-10 rounded-lg p-10 text-white md:w-1/2"
             >
-              <span className="text-3xl font-semibold">Plus</span>
+              <span className="text-3xl font-semibold">Premium</span>
               <p className="flex items-center justify-between text-xl font-semibold">
-                <span>$2.99/month</span>
+                <span>$6.99/month</span>
                 <span>
                   <ArrowUpRight />
                 </span>
