@@ -57,29 +57,33 @@ export default function TryItNow() {
   };
 
   return (
-    <div className="relative -z-20 mt-15 bg-white px-20">
+    <div className="relative -z-20 mt-15 bg-white px-8 md:px-20">
       <div className="bg-light absolute right-0 bottom-0 left-0 -z-10 h-20" />
-      <div className="bg-neutral-blue flex justify-between rounded-lg shadow-xl">
+      <div className="bg-neutral-blue flex flex-col justify-between rounded-lg shadow-xl md:flex-row">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="bg-neutral-blue rounded-lg p-15"
+          className="bg-neutral-blue rounded-lg px-10 py-5 md:p-15"
         >
           <motion.h1
             variants={itemVariants}
-            className="text-primary text-xs font-semibold uppercase"
+            className="text-primary text-center text-xs font-semibold uppercase md:text-start"
           >
             Try it now
           </motion.h1>
           <div className="mt-4 flex flex-col items-start justify-between gap-6">
-            <motion.p variants={itemVariants} className="text-4xl text-white">
-              Ready to level up your <br /> payment process?
+            <motion.p
+              variants={itemVariants}
+              className="text-center text-2xl text-white md:text-start md:text-4xl"
+            >
+              Ready to level up your <span className="hidden md:block" />{" "}
+              payment process?
             </motion.p>
             <motion.p
               variants={itemVariants}
-              className="text-sm text-neutral-400"
+              className="text-center text-sm text-neutral-400 md:text-start"
             >
               Supports samll businessess with simple invoicing, powerful <br />
               integrations and cash flow management tools.
@@ -92,7 +96,7 @@ export default function TryItNow() {
           variants={buttonVariant}
           initial="hidden"
           animate={controls}
-          className="flex items-center justify-center gap-5 rounded-lg p-15"
+          className="flex flex-col items-center justify-center gap-5 rounded-lg p-10 md:flex-row md:p-15"
         >
           <button className="bg-primary rounded-lg px-6 py-2 text-sm text-white">
             Get Started Now

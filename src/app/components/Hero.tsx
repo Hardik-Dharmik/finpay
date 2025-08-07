@@ -29,7 +29,7 @@ export default function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-center md:flex-row"
+          className="flex flex-col items-center gap-y-10 md:flex-row md:gap-0"
         >
           <div className="flex w-full flex-col items-center justify-between gap-5 md:w-1/2 md:items-start">
             <motion.h1

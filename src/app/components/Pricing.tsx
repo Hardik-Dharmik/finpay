@@ -11,8 +11,8 @@ export default function Pricing() {
   const isInView = useInView(ref, { once: false, amount: 0.6 });
 
   return (
-    <div className="px-20 py-10" ref={ref}>
-      <Container className="flex flex-col items-center px-25">
+    <div className="py-10 md:px-20" ref={ref}>
+      <Container className="flex flex-col items-center px-10 md:px-25">
         <motion.span
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -25,9 +25,9 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-3 text-center text-4xl/normal font-semibold"
+          className="mt-3 text-center text-3xl font-semibold md:text-4xl/normal"
         >
-          We've helped <br />
+          We've helped <span className="hidden md:block" />
           innovative companies.
         </motion.p>
 
@@ -45,7 +45,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mx-auto mt-10 flex gap-14"
+          className="mx-auto mt-10 flex flex-col gap-8 md:flex-row md:gap-14"
         >
           <div className="flex flex-col items-center justify-around gap-3">
             <span className="text-5xl font-semibold">24%</span>
@@ -65,18 +65,18 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-primary mt-8 text-xs uppercase"
+          className="text-primary mt-8 text-base uppercase md:text-xs"
         >
           Choose Plan
         </motion.span>
 
         <div className="mt-10 flex w-full flex-1 flex-col gap-y-4">
-          <div className="flex gap-x-4">
+          <div className="flex flex-col gap-y-4 md:flex-row md:gap-x-4">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="bg-light text-neutral-blue flex w-1/2 flex-col justify-between gap-y-10 rounded-lg p-10"
+              className="bg-light text-neutral-blue flex flex-col justify-between gap-y-10 rounded-lg p-10 md:w-1/2"
             >
               <span className="text-3xl font-semibold">Plus</span>
               <p className="flex items-center justify-between text-xl font-semibold">
@@ -90,7 +90,7 @@ export default function Pricing() {
               initial={{ opacity: 0, y: -40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: "easeOut", delay: 1 }}
-              className="bg-primary flex w-1/2 flex-col justify-between rounded-lg p-10 text-white"
+              className="bg-primary flex flex-col justify-between gap-y-10 rounded-lg p-10 text-white md:w-1/2"
             >
               <span className="text-3xl font-semibold">Plus</span>
               <p className="flex items-center justify-between text-xl font-semibold">

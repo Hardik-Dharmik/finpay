@@ -10,32 +10,32 @@ export default function Footer() {
   const isInView = useInView(ref, { once: false });
   return (
     <div className="bg-light" ref={ref}>
-      <Container className="p-20 pb-5">
+      <Container className="p-10 pb-5 md:p-20 md:pb-2">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div className="flex items-start justify-between border-b border-neutral-500 pb-5">
+          <div className="flex flex-col justify-between gap-6 border-b border-neutral-500 pb-5 text-center md:flex-row md:items-start md:gap-0">
             <h1 className="text-neutral-blue text-xl font-bold">Finpay</h1>
 
-            <div className="flex gap-15">
+            <div className="flex flex-col gap-7 md:flex-row md:gap-15">
               <div className="flex flex-col">
-                <p className="text-neutral-blue mb-5">Solutions</p>
+                <p className="text-neutral-blue mb-3 md:mb-5">Solutions</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-neutral-blue mb-5">Solutions</p>
+                <p className="text-neutral-blue mb-3 md:mb-5">Solutions</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-neutral-blue mb-5">Solutions</p>
+                <p className="text-neutral-blue mb-3 md:mb-5">Solutions</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
                 <p className="my-2 text-sm text-neutral-500">Small Business</p>
@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div>
+            <div className="flex flex-col items-center md:items-start">
               <p className="text-primary mb-2 text-sm">Follow us on</p>
               <div className="flex gap-1">
                 <Twitter />

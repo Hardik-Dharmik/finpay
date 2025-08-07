@@ -57,44 +57,50 @@ export default function Experience() {
   };
 
   return (
-    <div className="relative -z-20 min-h-[80vh] bg-white px-20">
+    <div className="relative -z-20 min-h-[80vh] bg-white px-5 md:px-20">
       <div className="bg-light absolute top-0 right-0 left-0 -z-10 h-20"></div>
       <motion.div
         ref={ref}
         variants={containerVariants}
         initial="hidden"
         animate={controls}
-        className="rounded-lg bg-white p-15 shadow-xl"
+        className="rounded-lg bg-white p-10 shadow-xl md:p-15"
       >
         <motion.h1
           variants={itemVariants}
-          className="text-primary text-xs font-semibold uppercase"
+          className="text-primary text-center text-xs font-semibold uppercase md:text-start"
         >
           Future Payment
         </motion.h1>
-        <div className="mt-4 flex items-center justify-between">
-          <motion.p variants={itemVariants} className="text-4xl">
-            Experience that grows <br /> with your scale.
+        <div className="mt-4 flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0">
+          <motion.p
+            variants={itemVariants}
+            className="text-center text-2xl md:text-start md:text-4xl"
+          >
+            Experience that grows <span className="hidden md:block" /> with your
+            scale.
           </motion.p>
           <motion.p
             variants={itemVariants}
-            className="w-2/6 text-sm text-neutral-400"
+            className="text-center text-sm text-neutral-400 md:w-2/6 md:text-start"
           >
             Design a financial operating system that works for your business and
             streamlined cash flow management.
           </motion.p>
         </div>
 
-        <div className="mt-14 grid grid-cols-3 gap-4">
+        <div className="mt-9 grid gap-8 md:mt-14 md:grid-cols-3 md:gap-4">
           {experiences.map((experience, index) => (
             <motion.div
               variants={girdItemVariants}
-              className="space-y-4"
+              className="flex flex-col items-center space-y-4 md:inline"
               key={index}
             >
               <p>{experience.logo}</p>
-              <p className="mt-4 text-lg font-semibold">{experience.text}</p>
-              <p className="text-sm text-neutral-500">
+              <p className="mt-2 text-lg font-semibold md:mt-4">
+                {experience.text}
+              </p>
+              <p className="text-center text-sm text-neutral-500 md:text-start">
                 {experience.description}
               </p>
             </motion.div>

@@ -54,7 +54,7 @@ export default function Step() {
   };
 
   return (
-    <div className="bg-neutral-blue px-20">
+    <div className="bg-neutral-blue md:px-20">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -74,7 +74,7 @@ export default function Step() {
           </motion.p>
         </div>
 
-        <div className="mt-14 grid grid-cols-3 gap-6 text-white">
+        <div className="mt-14 grid gap-6 text-white md:grid-cols-3">
           {experiences.map((experience, index) => (
             <motion.div
               variants={girdItemVariants}
