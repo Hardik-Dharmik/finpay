@@ -93,7 +93,7 @@ export default function Hero() {
 
           <motion.div
             variants={itemVariants}
-            className="flex w-1/2 items-center justify-center"
+            className="flex w-1/2 -translate-x-5 items-center justify-center md:translate-x-0"
           >
             <PaymentCard />
           </motion.div>
